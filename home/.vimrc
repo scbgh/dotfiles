@@ -11,6 +11,7 @@ Bundle "tomtom/tlib_vim"
 
 Bundle "L9"
 Bundle "FuzzyFinder"
+Bundle "bufkill.vim"
 
 """"""""""
 
