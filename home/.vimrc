@@ -1,6 +1,7 @@
 """"""""""
 " Vundle
 "
+filetype on
 filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
@@ -38,7 +39,7 @@ set viewoptions=folds,options,cursor,unix,slash
 
 "  UI
 set backspace=indent,eol,start " Proper backspace
-set cinoptions=h4,l1,g0,t0,i4,+4,(4,w1,W4,:0
+set cinoptions=h4,l1,g0,t0,i4,+4,(4,w1,W4,:0,N-s
 set completeopt=longest,menuone,preview
 set fillchars+=vert:\ 
 set fillchars-=vert:\|
