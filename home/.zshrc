@@ -13,6 +13,7 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:$PATH
+export GTEST_ROOT=~/Store/gtest
 
 # Parallel make
 alias make="make -j4"
