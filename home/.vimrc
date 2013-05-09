@@ -43,6 +43,7 @@ set cinoptions=h4,l1,g0,t0,i4,+4,(4,w1,W4,:0,N-s
 set completeopt=longest,menuone,preview
 set fillchars+=vert:\ 
 set fillchars-=vert:\|
+set guioptions-=T
 set laststatus=2
 set linespace=3 " A little extra space between lines
 set list!
@@ -150,8 +151,12 @@ else
 endif
 
 " Font
-set gfn=PT\ Mono:h12
-set antialias
+if has('mac')
+    set gfn=PT\ Mono:h12
+    set antialias
+else
+    set gfn=PT\ Mono\ 10
+endif
 
 highlight NonText guifg=#444444 guibg=bg
 hi User1 guifg=#eea040 guibg=bg
