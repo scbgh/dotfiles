@@ -121,6 +121,9 @@ nnoremap <F8> :call RestoreSess()<CR>
 cmap cwd lcd %:p:h
 cmap cd. lcd %:p:h
 
+" Avoid fat fingering :wq
+cabbrev wq w
+
 " annoying :W
 command! W w
 
@@ -155,7 +158,7 @@ if has('mac')
     set gfn=PT\ Mono:h12
     set antialias
 else
-    set gfn=PT\ Mono\ 10
+    set gfn=PT\ Mono\ 8
 endif
 
 highlight NonText guifg=#444444 guibg=bg
